@@ -5,7 +5,7 @@ public class Main {
     // TODO Auto-generated method stub
 
     String object = null;
-    String message = "object°¡ null ÀÔ´Ï´Ù.";
+    String message = "objectëŠ” null ìž…ë‹ˆë‹¤.";
     ObjectUtils.checkNotNull(object, message);
   }
 

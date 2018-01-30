@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.Map;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.NullString;
 
 public class ObjectUtils {
   public static boolean isEmpty(Object s) {
@@ -11,7 +10,7 @@ public class ObjectUtils {
       return true;
     }
     /**
-     * À§ÀÇ ¹æ¹ıÀ¸·Î null È®ÀÎÀ» ÇÏ±âµµ ÇÏ³ª, StringÅ¬·¡½ºÀÇ °æ¿ì isEmpty()-(±æÀÌ°¡ 0ÀÎÁö ÆÇº°)°¡ Á¸ÀçÇÔÀ¸·Î ÇØ´ç¹æ½ÄÀ¸·Îµµ ¸¹ÀÌ »ç¿ëÇÑ´Ù.
+     * ìœ„ì˜ ë°©ë²•ìœ¼ë¡œ null í™•ì¸ì„ í•˜ê¸°ë„ í•˜ë‚˜, Stringí´ë˜ìŠ¤ì˜ ê²½ìš° isEmpty()-(ê¸¸ì´ê°€ 0ì¸ì§€ íŒë³„)ê°€ ì¡´ì¬í•¨ìœ¼ë¡œ í•´ë‹¹ë°©ì‹ìœ¼ë¡œë„ ë§ì´ ì‚¬ìš©í•œë‹¤.
      * 
      * String s = null or ""; if(s == null || s.isEmpty()){ return true; }
      */
@@ -29,8 +28,8 @@ public class ObjectUtils {
   }
 
   /**
-   * @detail null checking ¹æ½ÄÀ¸·Î ´Ù¾çÇÑ Å¬·¡½º¸¦ Áö¿øÇÏ±â À§ÇØ, Generic Å¸ÀÔÀÇ nullchecking ¹æ½ÄÀ» »ç¿ëÇÏ¿© exception
-   *         ½Ã½ºÅÛ¸Ş½ÃÁö¸¦ ³²±ä´Ù.
+   * @detail null checking ë°©ì‹ìœ¼ë¡œ ë‹¤ì–‘í•œ í´ë˜ìŠ¤ë¥¼ ì§€ì›í•˜ê¸° ìœ„í•´, Generic íƒ€ì…ì˜ nullchecking ë°©ì‹ì„ ì‚¬ìš©í•˜ì—¬ exception
+   *         ì‹œìŠ¤í…œë©”ì‹œì§€ë¥¼ ë‚¨ê¸´ë‹¤.
    * @param object
    * @param message
    * @return
