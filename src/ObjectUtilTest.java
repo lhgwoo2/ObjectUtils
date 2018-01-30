@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.ArrayList;
@@ -57,4 +58,10 @@ class ObjectUtilTest {
     assertTrue(ObjectUtils.isEmpty(array));
   }
 
+  @Test
+  void objectNotNullCheck() {
+    String object = null;
+    String message = "객체가 null 입니다.";
+    assertNotNull(ObjectUtils.checkNotNull(object, message));
+  }
 }
